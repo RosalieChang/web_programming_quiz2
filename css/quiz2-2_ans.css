@@ -1,0 +1,43 @@
+/*********************************
+*  quiz2-2 - practice (25 mins)  *
+*  1. attribute	selector		 *
+*  2. pseudo-class				 *
+*  3. combinator				 *
+**********************************/
+	
+/* aside sex */	
+	aside input:checked + label{
+		font-size:2em;
+	}
+	aside input:not(:checked) + label{
+		font-size:1em;
+	}
+
+
+/* aside occupation */
+	aside select option{
+		font-size:1.5em;
+	}
+	aside select option:nth-child(odd) {
+		color: rgb(0, 140, 140); 
+	}
+	aside select option:nth-child(even) {
+		color: rgb(188, 65, 61);
+	}
+	aside select option:nth-child(2) {
+		font-style:Italic;
+		font-weight:bold;
+	}
+	aside select option:last-child {
+		color: rgb(133, 140, 140);
+	}
+	
+	
+/* aside email submit */
+	aside input[type=submit] {
+	  opacity: 0.3;
+	}
+	aside input[type=email]:focus ~ 
+	input[type=submit]{
+	  opacity: 1;
+	}
