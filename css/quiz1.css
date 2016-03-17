@@ -2,25 +2,6 @@
 header > a > img {
 	margin-bottom:1%;
 }
-nav > ul {
-    list-style-type: none;
-    /*height:60px;*/
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #222222;
-}
-nav > ul > li {
-    float: left;
-    display: block;
-    color: white;
-    /*height:60px;*/
-    padding: 15px;
-    font-size:12px;
-    text-align: center;
-    text-decoration: none;
-    border-right: 1px solid #bbb;
-}
 nav > ul > li > a {
 	color: white;
     text-decoration: none;
@@ -29,21 +10,6 @@ article > header > a {
     text-decoration: none;
 }
 
-/* ------- Radian ------- */
-article > div > img {
-	width : 100%  ;
-}
-article {
-	width : 70% ;
-	float: left;;
-}
-aside {
-	margin-left: 2% ;
-	width: 26% ;
-	float: left; ;
-	padding: 1%;
-}
 body > footer {
 	padding-top: 50px ;
-	clear: both;
 }

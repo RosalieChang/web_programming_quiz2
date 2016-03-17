@@ -76,7 +76,7 @@
 
 
 /* article footer */
-	article > footer > a:link {
+	article > footer a:link {
 		color: rgb(35, 120, 150)
 	}
 	article > footer a:visited {
@@ -85,6 +85,7 @@
 
 
 /* aside */
-	aside {
+	aside > form {
+		padding: 10px;	
 	    background-color: rgba(0, 140, 140, 0.2);
 	}
