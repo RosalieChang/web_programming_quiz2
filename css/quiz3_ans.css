@@ -1,0 +1,128 @@
+/*body最寬 900px、最小660px，拉大會置中*/
+body{
+	max-width:900px;
+	min-width:660px;
+	margin: 0 auto;
+}
+
+/*nav佔頁寬70%*/
+body > nav {
+	width: 70%;
+}
+
+/*會按照字的寬度平均分配大小*/
+body > nav > ul {
+	display: flex;
+}
+body > nav > ul > li {
+    flex: auto;
+}
+nav > ul > li:last-child {
+    border-right: 0px;
+}
+
+/*article至左佔頁寬70%，頁寬右邊30%為aside*/
+body > article {
+	width: 70% ;
+	float: left;
+}
+
+/*作者資訊至右 & font awesome*/
+article > header > div {
+	display: flex;
+	justify-content: flex-end;
+}
+article > header > div > p {
+	padding-right: 10px;
+	border-right: 1px solid lightgray;
+	margin-right: 12px;
+	color: rgb(60, 135, 190);
+}
+article > header > div > form > p {
+	color: rgb(15, 30, 150);
+}
+.fa-user {
+	margin-right: 10px;
+}
+.fa-calendar {
+	margin-right: 5px;
+}
+
+/* article 文繞圖，圖、圖說明、引言間隔文字10px */
+body > article > div > img {
+	width: 65%;
+	float: left;
+	margin-right: 10px;
+}
+#caption {
+	text-align: center;
+	width: 65%;
+	float: left;
+	margin-right: 10px;
+}
+body > article > div > blockquote {
+	width: 65%;
+	float: left;
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+/* article 相關說明使用flex等分三區 */
+body > article > footer > div{
+	display: flex;
+}
+
+body > article > footer > div > p {
+	flex: 1;
+	min-width: 100px;
+  	padding: 0px 5px 0px 7px;
+  	border-right: 1px dashed #bbb;
+}
+body > article > footer > div > p:nth-of-type(3){
+	border-right: 0px;
+}
+
+/* aside 固定在右邊，最大300px、最小250px */
+body > aside > form{
+	width: 30% ;
+	min-width:250px; 
+	max-width:300px;
+	position: fixed;
+	left: 70%;
+}
+
+/* footer 在最下方 */
+body > footer {
+	clear: both;	
+}
+body > footer > p {
+	display:flex;
+    align-items: center;
+  	justify-content: center;
+}
+
+/*horizontal list*/
+body > footer > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body > footer > ul > li {
+    float: right;
+    display: block;
+    color: black;
+    height: ;
+    padding: 5px;
+    font-size:0.5em;
+    text-align: center;
+    text-decoration: none;
+    border-right: 1px solid #bbb;
+}
+body > footer > ul > li:nth-child(2) {
+    border-left: 1px solid #bbb;
+}
+.social-icon {
+    float: left;
+    border-right: none;
+}
